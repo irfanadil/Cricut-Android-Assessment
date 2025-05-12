@@ -26,7 +26,7 @@ sealed class UserDomainQuestion   {
         override val questionType: QuestionType,
         val choices: List<String>,
         val correctAnswers: List<String>,
-        var userAnswer:List<String>?=null,
+        var userAnswer: ArrayList<String> = arrayListOf<String>(),
 
         ) : UserDomainQuestion()
 
